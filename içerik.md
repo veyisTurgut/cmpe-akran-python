@@ -132,5 +132,62 @@
   - ##### RANGE()
 </details>
 
+<details> <summary> LISTS and TUPLES </summary>
+  
+  
+  
+</details>
 
+<details> <summary> SET and DICT </summary>
+  
+  
+  
+</details>
+
+<details> <summary> EXERCISES </summary>
+  
+  * find factorial <br/> 
+    ` `
+  * check armstrong number<br/> 
+    ` `
+  * print fibonacci<br/> 
+    ` `
+  * check prime <br/> 
+    ` `
+  * check palindrome<br/> 
+    ` `
+  * reverse number<br/> 
+    ` `
+  * decimal to binary<br/> 
+    ` `
+  * bubble sort<br/> 
+    ` `
+  * binary search<br/> 
+    ` `
+  * find prime factor<br/> 
+    ` `
+  
+</details>
+
+<details> <summary> INTERESTING STUFF </summary>
+   
+  * url shortener <br/> 
+    ` `
+  * youtube video downloader <br/> 
+    ` `
+  * convert video to audio <br/> 
+    ` `
+  * fetch instagram profile details <br/> 
+    ` `
+  * number huessing <br/> 
+    ` `
+  * rock paper scissors <br/>
+    ` `
+  * website blocker<br/> 
+    ` `
+  * pdf merge <br/> 
+    ` `
+  * random password generator <br/> 
+    ` `
+</details>
 Derived from  https://docs.python.org/3/tutorial/ and  https://www.w3schools.com/python/
