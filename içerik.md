@@ -131,3 +131,6 @@
   - ##### BREAK
   - ##### RANGE()
 </details>
+
+
+Derived from  https://docs.python.org/3/tutorial/ and  https://www.w3schools.com/python/
