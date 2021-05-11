@@ -51,12 +51,21 @@
    - `>>> "hello {}".format("world")`<br/> `'hello world'`
    - `>>> "Hesap {} TL.".format("2")`<br/> `'Hesap 2 TL.'`
  - INDEXING 
-   - `>>> "string"[0]`<br/> `'s'`
-   - `>>> "string"[2]`<br/> `'t'`
-   - `>>> "string"[-1]`<br/> `'g'`
-   - `>>> "string"[1:3]`<br/> `'tr'`
-   - `>>> "string"[:-2]`<br/> `'stri'`
-   - `>>> "string"[1:]`<br/> `'tring'`
+   - `>>> "helloo"[0]`<br/> `'h'`
+   - `>>> "helloo"[2]`<br/> `'l'`
+   - `>>> "helloo"[-1]`<br/> `'o'`
+   - `>>> "helloo"[1:3]`<br/> `'el'`
+   - `>>> "helloo"[:-2]`<br/> `'hell'`
+   - `>>> "helloo"[1:]`<br/> `'elloo'`
+- METHODS 
+  - `>>> "hello world".upper()`<br/> `'HELLO WORLD'`
+  - `>>> "HELLO world".lower()`<br/> `'hello world'`
+  - `>>> "hello world".title()`<br/> `'Hello World'`
+  - `>>> "hello world".find("lo")`<br/> `3`
+  - `>>> "hello world".count("o")`<br/> `2`
+  - `>>> "hellO world".islower()`<br/> `False`
+  - `>>> "hello world".replace("hello","byebye")`<br/> `'byebye world'`
+
 </details>
 
 <details> <summary> VARIABLES</summary>
@@ -304,7 +313,7 @@
     print(user.number_of_followers)
     print(user.profile_picture_url)
     ```
-  * number huessing <br/> 
+  * number guessing <br/> 
     ` `
   * rock paper scissors <br/>
     ` `
