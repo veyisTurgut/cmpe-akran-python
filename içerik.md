@@ -116,40 +116,208 @@
 
 <details> <summary> COMPARISON and BOOLEANS </summary>
   
-  - `>>> 9 > 2`<br/> `True`
-  - `>>> 9 >= 9.0`<br/> `True`
-  - `>>> 9 < 2`<br/> `False`
-  - `>>> 9 <= 2`<br/> `False`
-  - `>>> 9 == 2`<br/> `False`
-  - `>>> 9 != 9.0`<br/> `False`
-  - `>>> 3*5 == 15`<br/> `True`
+  - ```
+    >>> 9 > 2
+    True
+    ```
+  - ```
+    >>> 9 >= 9.0
+    True
+    ```
+  - ```
+    >>> 9 < 2
+    False
+    ```
+  - ```
+    >>> 9 <= 2
+    False
+    ```
+  - ```
+    >>> 9 == 2
+    False
+    ```
+  - ```
+    >>> 9 != 9.0
+    False
+    ```
+  - ```
+    >>> 3*5 == 15
+    True
+    ```
   
+</details>
+
+<details> <summary> LISTS  </summary>
+  <br> "Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type."[1]
+  
+  <br> **This part is completely taken from https://docs.python.org/3/tutorial/introduction.html#lists**<br>
+  
+  ```
+  >>> squares = [1, 4, 9, 16, 25]
+  >>> squares
+  [1, 4, 9, 16, 25]
+  ```
+  
+  ```
+  >>> squares[0]  # indexing returns the item
+  1
+  >>> squares[-1]
+  25
+  >>> squares[-3:]  # slicing returns a new list
+  [9, 16, 25]
+  >>> squares[:]
+  [1, 4, 9, 16, 25]
+  ```
+  
+  ```
+  >>> squares + [36, 49, 64, 81, 100]
+  [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+  ```
+  
+  ```
+  >>> cubes = [1, 8, 27, 65, 125]  # something's wrong here
+  >>> 4 ** 3  # the cube of 4 is 64, not 65!
+  64
+  >>> cubes[3] = 64  # replace the wrong value 
+  >>> cubes
+  [1, 8, 27, 64, 125]
+  ```
+  
+  ```
+  >>> cubes.append(216)  # add the cube of 6
+  >>> cubes.append(7 ** 3)  # and the cube of 7
+  >>> cubes
+  [1, 8, 27, 64, 125, 216, 343]
+  ```
+  
+  ```
+  >>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+  >>> letters
+  ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+  >>> # replace some values
+  >>> letters[2:5] = ['C', 'D', 'E']
+  >>> letters
+  ['a', 'b', 'C', 'D', 'E', 'f', 'g']
+  >>> # now remove them
+  >>> letters[2:5] = []
+  >>> letters
+  ['a', 'b', 'f', 'g']
+  >>> # clear the list by replacing all the elements with an empty list
+  >>> letters[:] = []
+  >>> letters
+  []
+  ```
+  
+  ```
+  >>> letters = ['a', 'b', 'c', 'd']
+  >>> len(letters)
+  4 
+  ```
+  
+  ```
+  >>> a = ['a', 'b', 'c']
+  >>> n = [1, 2, 3]
+  >>> x = [a, n]
+  >>> x
+  [['a', 'b', 'c'], [1, 2, 3]]
+  >>> x[0]
+  ['a', 'b', 'c']
+  >>> x[0][1]
+  'b'
+  ```
 </details>
 
 ### Şimdi Pycharm'a geçelim.
 
 <details> <summary> IF and INDENTATION </summary>
+    
+  There can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else if’.
   
-  
-  
+  ```python
+  num = int(input("Enter a number:\n"))
+  if num < 0:
+    print("You entered a negative number")
+  elif num == 0:
+    print("You entered zero")
+  else:
+    print("You entered a positive number")
+  ```
+  ```python
+  num = int(input("Enter a number:\n"))
+  if num >= 85:
+    print(5)
+  elif num >= 70:
+    print(4)
+  elif num >= 60:
+    print(3)
+  elif num >= 50:
+    print(2)
+  else:
+    print(1)
+  ```
+  ```python
+  num1 = int(input("Enter a number:\n"))
+  num2 = int(input("Enter anoher number:\n"))
+  if num1 == num2:
+    print("you entered equal numbers")
+  else:
+    if num1 > num2:
+        print("first number was greater")
+    else:
+        print("second number was greater")
+  ```
 </details>
   
 <details> <summary> LOOPS</summary>
+    <br>
+  In computer science, a loop is a programming structure that repeats a sequence of instructions until a specific condition is met. 
+    
+  - ### WHILE LOOP
+    <br> The while statement is used for repeated execution as long as an expression is true:
+    ```python
+    i = 1
+    while i < 6:
+      print(i)
+      i += 1
+    ```
+    ```python
+    import time
 
-  - ### WHILE
-  - ### FOR
+    timer = 10
+    while timer != 0:
+        print(f"bomb will explode in {timer}")
+        timer = timer - 1
+        time.sleep(1) # sleep 1 seconds
+    print("BOOOOM!!")
+    ```
+    ```python
+    num = int(input("Enter numbers to add or type 0 to exit: "))
+    sum = num
+    while num != 0:
+        num = int(input(f"Sum is {sum}. Enter another number or type 0 to exit: "))
+        sum += num
+    print(f"Sum is: {sum}")
+    ```
+    ```python
+    text = input("Type something and I'll find the number of words in it!\n")
+    index = 0
+    number_of_words = 0
+    while index < len(text):
+        if text[index] == " ":
+            number_of_words += 1
+        index += 1
+    print(f"There are {number_of_words + 1} words in \"{text}\".")
+    ```
+
+  - ### FOR LOOP
+  
   - ##### CONTINUE
   - ##### BREAK
   - ##### RANGE()
 </details>
 
-<details> <summary> LISTS and TUPLES </summary>
-  
-  
-  
-</details>
 
-<details> <summary> SET and DICT </summary>
+<details> <summary> TUPLES and SET and DICT </summary>
   
   
   
@@ -324,4 +492,8 @@
   * random password generator <br/> 
     ` `
 </details>
+<br>
 Derived from  https://docs.python.org/3/tutorial/ and  https://www.w3schools.com/python/
+<br>
+[1]: https://docs.python.org/3/tutorial/introduction.html#lists
+<br>
