@@ -433,9 +433,30 @@
   >>> r
   range(0, 20, 2)
   ```
-  - ##### CONTINUE
+  ```python
+  my_list = ['pop', 'rock', [10], 5.2, -3,  'jazz']
+  for i in range(len(my_list)):
+      if type(my_list[i]) == str:
+          print(my_list[i][:-1])
+      elif type(my_list[i]) == int:
+          print(my_list[i]**2)
+  ```
   - ##### BREAK
-  
+  Break out a for loop.
+  ```
+  for i in range(9):
+  if i > 3:
+    break
+  print(i)
+   ```
+  - ##### CONTINUE
+  Skip the iteration, but continue with the next iteration.
+  ```
+  for i in range(9):
+  if i == 3:
+    continue
+  print(i)
+  ```
 </details>
 
 
