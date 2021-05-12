@@ -133,26 +133,40 @@
 <details> <summary> VARIABLES</summary>
 
   - DECLARATION
-    - `>>> x = 5`
-    - `>>> y = 4.3`
-    - `>>> z = "hello"`
-    - `>>> Y = 8`
-    - `>>> a, b = 5, 6`
-    - `>>> a, b = b, a+b`
+    ```
+    >>> x = 5
+    >>> y = 4.3
+    >>> z = "hello"
+    >>> Y = 8
+    >>> a, b = 5, 6
+    >>> a, b = b, a+b
+    ```
   - TYPE()
-    -  `>>> type(x)`<br/> `'<class 'int'>'`
-    -  `>>> type(y)`<br/> `'<class 'float'>'`
-    -  `>>> type(z)`<br/> `'<class 'str'>'`
-    -  `>>> type(Y)`<br/> `'<class 'int'>'`
-    -  `>>> type(True)`<br/> `'<class 'bool'>'`
-    -  `>>> type(False)`<br/> `'<class 'bool'>'`
+    ```
+    >>> type(x)`<br/> `'<class 'int'>'
+    >>> type(y)`<br/> `'<class 'float'>'
+    >>> type(z)`<br/> `'<class 'str'>'
+    >>> type(Y)`<br/> `'<class 'int'>'
+    >>> type(True)`<br/> `'<class 'bool'>'
+    >>> type(False)`<br/> `'<class 'bool'>'
+    ```
   - CASTING
-    - `>>> int(2.6)`<br/> `2`
-    - `>>> float(2)`<br/> `2.0`
-    - `>>> str(2.6)`<br/> `'2.6'`
-    - `>>> str(2)`<br/> `'2'`
-    - `>>> int(False)`<br/> `0`
-    - `>>> bool(2)`<br/> `True`
+    ```
+    >>> int(2.6)
+    2
+    >>> float(2)
+    2.0
+    >>> str(2.6)
+    '2.6'
+    >>> str(2)
+    '2'
+    >>> int(False)
+    0
+    >>> bool(2)
+    True
+    >>> int(y)
+    4
+    ```
 </details>
 
 <details> <summary>  INPUT()</summary>
