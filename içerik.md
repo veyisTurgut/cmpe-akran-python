@@ -71,16 +71,24 @@
 <details> <summary> STRINGS</summary>
   
  - CONCATENATION
-   - `>>> "hello world"`<br/> `'hello world`
-   - `>>> "hello" + " world"`<br/> `'hello world'`
-   - `>>> "hello" * 2 `<br/> `'hellohello'`
+   ```
+   >>> "hello world"
+   'hello world'
+   >>> "hello" + " world"
+   'hello world'
+   >>> "hello" * 2 
+   'hellohello'
+   ```
  - ESCAPE CHARACTER 
-   - `>>> "hello \"Ali\""`<br/> `'hello Ali'`
-   - `>>> """hello` <br/>
-`world` <br/>
-`in` <br/>
-`multiple lines"""` 
-<br/> `'hello\nworld\nin\nmultiple lines'`
+   ```
+   >>> "hello \"Ali\""
+   'hello Ali'`
+   >>> """hello
+   world
+   in
+   multiple lines"""
+   'hello\nworld\nin\nmultiple lines'
+   ```
  - FORMATTING
    - `>>> "hello {}".format("world")`<br/> `'hello world'`
    - `>>> "Hesap {} TL.".format("2")`<br/> `'Hesap 2 TL.'`
