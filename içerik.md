@@ -3,35 +3,69 @@
 <details> <summary> MATH</summary>
 
 - ADDITION & SUBTRACTION & MULTIPLICATION
-   - `>>> 15 + 4` <br/> `19`
-   - `>>> 15 - 4` <br/> `11`
-   - `>>> 15 * 4` <br/> `60`
-   - `>>> 3.2 + 2` <br/> `5.2`
-   - `>>> 3.2 - 3.2` <br/> `0.0`
-   - `>>> 3.2 * 5` <br/> `16.0`
+   - ```
+     >>> 15 + 4
+     19
+     >>> 15 - 4
+     11
+     >>> 15 * 4
+     60  
+     >>> 3.2 + 2
+     5.2   
+     >>> 3.2 - 3.2 
+     0.0
+     >>> 3.2 * 5
+     16.0
+     ```
  
-- DIVISION
-   - FLOAT DIVISION vs INTEGER DIVISION
-     - `>>> 15 / 4` <br/> `3.75`
-     - `15 // 4` <br/> `3`
+ - FLOAT DIVISION vs INTEGER DIVISION
+     ```
+     >>> 15 / 4
+     3.75
+     >>> 15 // 4
+     3
+     ```
 
 - POWER & REMAINDER
-   - `2 ** 3`<br/> `8`
-   - `15 % 7`<br/> `1`
+     ```
+     >>> 2 ** 3
+     8
+     >>>15 % 7
+     1
+     ```
 
 - math LIBRARY
-   - `>>> import math`
-   - `>>> math.floor(8.4)`<br/> `8`
-   - `>>> math.ceil(7.1)`<br/> `8`
-   - `>>> math.round(7.6)`<br/> `8`
-   - `>>> math.pi`<br/> `3.141592653589793` <br/>`>>> math.e`<br/> `2.718281828459045` <br/>`>>> math.inf`<br/> `inf`
-   - `>>> math.fabs(-5)`<br/> `5`
-   - `>>> math.sqrt(25)`<br/> `5.0`
-   - `>>> math.sin(math.pi/2)` <br/> `1.0`
-   - `>>> math.log(10)`<br/> `2.302585092994046`<br/>  `>>> math.log(100,10)`<br/> `2.0`
-   - `>>> math.gcd(8,12)`<br/> `4`
-   - `>>> math.comb(5,2)`<br/> `10`
-   - `>>> math.pow(2,3)`<br/> `8.0`
+   ```
+   >>> import math
+   >>> math.floor(8.4)
+   8
+   >>> math.ceil(7.1)
+   8
+   >>> math.round(7.6)
+   8
+   >>> math.pi
+   3.141592653589793
+   >>> math.e
+   2.718281828459045
+   >>> math.inf
+   inf
+   >>> math.fabs(-5)
+   5
+   >>> math.sqrt(25)
+   5.0
+   >>> math.sin(math.pi/2)
+   1.0
+   >>> math.log(10)
+   2.302585092994046
+   >>> math.log(100,10)
+   2.0
+   >>> math.gcd(8,12)
+   4
+   >>> math.comb(5,2)`<br/> `
+   10
+   >>> math.pow(2,3)
+   8.0
+   ```
 </details>
 
 <details> <summary> STRINGS</summary>
