@@ -361,7 +361,7 @@
   In computer science, a loop is a programming structure that repeats a sequence of instructions until a specific condition is met. 
     
   - ### WHILE LOOP
-    <br> The while statement is used for repeated execution as long as an expression is true:
+    <br> The while statement is used for repeated execution as long as an expression is true.
     ```python
     i = 1
     while i < 6:
@@ -398,65 +398,66 @@
     ```
 
   - ### FOR LOOP
-  <br>A For Loop is used to repeat a specific block of code a "known" number of times. 
-  ```python
-  fruits = ["apple", "banana", "cherry"]
-  for x in fruits:
+    <br> A For Loop is used to repeat a specific block of code a "known" number of times. 
+  
+    ```python
+    fruits = ["apple", "banana", "cherry"]
+    for x in fruits:
      print(x)
-  ```
-  ```python
-  for x in "banana":
+    ```
+    ```python
+    for x in "banana":
      print(x)
-  ```
-  ```python
-  # Measure some strings:
-  words = ['cat', 'window', 'defenestrate']
-  for w in words:
-     print(w, len(w))
-  ```
-  ```python
-  for i in range(5):
-     print("*"*i)
-  ```
-  ```python
-  for i in range(5):
-     for j in range(i):
-          print(j*i,end=" ")
-     print()
-  ```
+    ```
+    ```python
+    # Measure some strings:
+    words = ['cat', 'window', 'defenestrate']
+    for w in words:
+       print(w, len(w))
+    ```
+    ```python
+    for i in range(5):
+       print("*"*i)
+    ```
+    ```python
+    for i in range(5):
+       for j in range(i):
+            print(j*i,end=" ")
+       print()
+    ```
   - ##### RANGE()
-  <br> If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates arithmetic progressions:
-  ```
-  >>> list(range(0, 30, 5))
-  [0, 5, 10, 15, 20, 25]
-  >>> r = range(0, 20, 2)
-  >>> r
-  range(0, 20, 2)
-  ```
-  ```python
-  my_list = ['pop', 'rock', [10], 5.2, -3,  'jazz']
-  for i in range(len(my_list)):
-      if type(my_list[i]) == str:
-          print(my_list[i][:-1])
-      elif type(my_list[i]) == int:
-          print(my_list[i]**2)
-  ```
+    If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates arithmetic progressions:
+    ```
+    >>> list(range(0, 30, 5))
+    [0, 5, 10, 15, 20, 25]
+    >>> r = range(0, 20, 2)
+    >>> r
+    range(0, 20, 2)
+    ```
+    ```python
+    my_list = ['pop', 'rock', [10], 5.2, -3,  'jazz']
+    for i in range(len(my_list)):
+        if type(my_list[i]) == str:
+            print(my_list[i][:-1])
+        elif type(my_list[i]) == int:
+            print(my_list[i]**2)
+    ```
   - ##### BREAK
-  Break out a for loop.
-  ```
-  for i in range(9):
-  if i > 3:
-    break
-  print(i)
-   ```
+    Break out a for loop.
+    ```python
+    for i in range(9):
+    if i > 3:
+      break
+    print(i)
+    ```
   - ##### CONTINUE
-  Skip the iteration, but continue with the next iteration.
-  ```
-  for i in range(9):
-  if i == 3:
-    continue
-  print(i)
-  ```
+    Skip the iteration, but continue with the next iteration.
+    ```python
+    for i in range(9):
+    if i == 3:
+      continue
+    print(i)
+    ```
 </details>
 
 
