@@ -90,24 +90,44 @@
    'hello\nworld\nin\nmultiple lines'
    ```
  - FORMATTING
-   - `>>> "hello {}".format("world")`<br/> `'hello world'`
-   - `>>> "Hesap {} TL.".format("2")`<br/> `'Hesap 2 TL.'`
+   ```
+   >>> "hello {}".format("world")
+   'hello world'
+   >>> "Hesap {} TL.".format("2")
+   'Hesap 2 TL.'
+   ```
  - INDEXING 
-   - `>>> "helloo"[0]`<br/> `'h'`
-   - `>>> "helloo"[2]`<br/> `'l'`
-   - `>>> "helloo"[-1]`<br/> `'o'`
-   - `>>> "helloo"[1:3]`<br/> `'el'`
-   - `>>> "helloo"[:-2]`<br/> `'hell'`
-   - `>>> "helloo"[1:]`<br/> `'elloo'`
+   ```
+   >>> "helloo"[0]
+   'h'
+   >>> "helloo"[2]
+   'l'
+   >>> "helloo"[-1]
+   'o'
+   >>> "helloo"[1:3]
+   'el'
+   >>> "helloo"[:-2]
+   'hell'
+   >>> "helloo"[1:]
+   'elloo'
+   ```
 - METHODS 
-  - `>>> "hello world".upper()`<br/> `'HELLO WORLD'`
-  - `>>> "HELLO world".lower()`<br/> `'hello world'`
-  - `>>> "hello world".title()`<br/> `'Hello World'`
-  - `>>> "hello world".find("lo")`<br/> `3`
-  - `>>> "hello world".count("o")`<br/> `2`
-  - `>>> "hellO world".islower()`<br/> `False`
-  - `>>> "hello world".replace("hello","byebye")`<br/> `'byebye world'`
-
+   ```
+   >>> "hello world".upper()
+   'HELLO WORLD'
+   >>> "HELLO world".lower()
+   'hello world'
+   >>> "hello world".title()
+   'Hello World'
+   >>> "hello world".find("lo")
+   3
+   >>> "hello world".count("o")
+   2
+   >>> "hellO world".islower()
+   False
+   >>> "hello world".replace("hello","byebye")
+   `'byebye world'
+   ```
 </details>
 
 <details> <summary> VARIABLES</summary>
