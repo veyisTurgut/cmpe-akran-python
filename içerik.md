@@ -216,7 +216,7 @@
 
 <details> <summary> COMPARISON and BOOLEANS </summary>
   
-  - ```
+    ```
     >>> 9 > 2
     True
     >>> 9 >= 9.0
@@ -398,10 +398,44 @@
     ```
 
   - ### FOR LOOP
-  
+  <br>A For Loop is used to repeat a specific block of code a "known" number of times. 
+  ```python
+  fruits = ["apple", "banana", "cherry"]
+  for x in fruits:
+     print(x)
+  ```
+  ```python
+  for x in "banana":
+     print(x)
+  ```
+  ```python
+  # Measure some strings:
+  words = ['cat', 'window', 'defenestrate']
+  for w in words:
+     print(w, len(w))
+  ```
+  ```python
+  for i in range(5):
+     print("*"*i)
+  ```
+  ```python
+  for i in range(5):
+     for j in range(i):
+          print(j*i,end=" ")
+     print()
+  ```
+  - ##### RANGE()
+  <br> If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates arithmetic progressions:
+  ```
+  >>> list(range(0, 30, 5))
+  [0, 5, 10, 15, 20, 25]
+  >>> r = range(0, 20, 2)
+  >>> r
+  range(0, 20, 2)
+  ```
   - ##### CONTINUE
   - ##### BREAK
-  - ##### RANGE()
+  
 </details>
 
 
