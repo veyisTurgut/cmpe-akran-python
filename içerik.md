@@ -178,7 +178,9 @@
 <details> <summary>  INPUT()</summary>
 
    ```
-   >>> input()`<br/> `2` <br/> `'2'`
+   >>> input()
+   2
+   '2'
    >>> int(input())
    2
    2
@@ -198,7 +200,7 @@
    >>> print(3+7.2)
    10.2
    >>> print("hello")
-   'hello
+   'hello'
    >>> print("hello" + " world")
    'hello world'
    >>> print(x)
@@ -217,28 +219,16 @@
   - ```
     >>> 9 > 2
     True
-    ```
-  - ```
     >>> 9 >= 9.0
     True
-    ```
-  - ```
     >>> 9 < 2
     False
-    ```
-  - ```
     >>> 9 <= 2
     False
-    ```
-  - ```
     >>> 9 == 2
     False
-    ```
-  - ```
     >>> 9 != 9.0
     False
-    ```
-  - ```
     >>> 3*5 == 15
     True
     ```
