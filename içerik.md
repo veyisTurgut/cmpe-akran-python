@@ -30,7 +30,7 @@
      ```
      >>> 2 ** 3
      8
-     >>>15 % 7
+     >>> 15 % 7
      1
      ```
 
@@ -82,7 +82,7 @@
  - ESCAPE CHARACTER 
    ```
    >>> "hello \"Ali\""
-   'hello Ali'`
+   'hello "Ali"'
    >>> """hello
    world
    in
@@ -123,7 +123,7 @@
    3
    >>> "hello world".count("o")
    2
-   >>> "hellO world".islower()
+   >>> "helLO world".islower()
    False
    >>> "hello world".replace("hello","byebye")
    `'byebye world'
@@ -143,12 +143,18 @@
     ```
   - TYPE()
     ```
-    >>> type(x)`<br/> `'<class 'int'>'
-    >>> type(y)`<br/> `'<class 'float'>'
-    >>> type(z)`<br/> `'<class 'str'>'
-    >>> type(Y)`<br/> `'<class 'int'>'
-    >>> type(True)`<br/> `'<class 'bool'>'
-    >>> type(False)`<br/> `'<class 'bool'>'
+    >>> type(x)
+    <class 'int'>
+    >>> type(y)
+    <class 'float'>
+    >>> type(z)
+    <class 'str'>
+    >>> type(Y)
+    <class 'int'>
+    >>> type(True)
+    <class 'bool'>
+    >>> type(False)
+    <class 'bool'>
     ```
   - CASTING
     ```
