@@ -171,23 +171,39 @@
 
 <details> <summary>  INPUT()</summary>
 
- - `>>> input()`<br/> `2` <br/> `'2'`
- - `>>> int(input())`<br/> `2` <br/> `2`
- - `>>> float(input("Please enter a number"))`<br/> `Please enter a number3.14` <br/> `3.14`
+   ```
+   >>> input()`<br/> `2` <br/> `'2'`
+   >>> int(input())
+   2
+   2
+   >>> float(input("Please enter a number: "))
+   Please enter a number: 3.14
+   3.14
+   ```
 </details>
 
 <details> <summary>  PRINT()</summary>
-  
-  - `>>> print()`<br/> ` `
-  - `>>> print(5)`<br/> `5`
-  - `>>> print(3+7.2)`<br/> `10.2`
-  - `>>> print("hello")`<br/> `'hello`
-  - `>>> print("hello" + " world")`<br/> `'hello world'`
-  - `>>> print(x)`<br/> `5`
-  - `>>> print(x * y)`<br/> `21.5`
-  - `>>> print(x, y, "hello")`<br/> `5 8 hello`
-  - `>>> print(x, y, "hello", sep="xx")`<br/> `5xx8xxhello`
-
+     
+   ```
+   >>> print()
+   
+   >>> print(5)
+   5
+   >>> print(3+7.2)
+   10.2
+   >>> print("hello")
+   'hello
+   >>> print("hello" + " world")
+   'hello world'
+   >>> print(x)
+   5
+   >>> print(x * y)
+   21.5
+   >>> print(x, y, "hello")
+   5 8 hello
+   >>> print(x, y, "hello", sep="xx")
+   5xx8xxhello
+   ```
 </details>
 
 <details> <summary> COMPARISON and BOOLEANS </summary>
