@@ -3,7 +3,7 @@
 <details> <summary> MATH</summary>
 
 - ADDITION & SUBTRACTION & MULTIPLICATION
-   - ```
+     ```
      >>> 15 + 4
      19
      >>> 15 - 4
@@ -61,7 +61,7 @@
    2.0
    >>> math.gcd(8,12)
    4
-   >>> math.comb(5,2)`<br/> `
+   >>> math.comb(5,2)
    10
    >>> math.pow(2,3)
    8.0
