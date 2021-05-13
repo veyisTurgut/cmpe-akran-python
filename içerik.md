@@ -575,15 +575,83 @@
     ```
   * bubble sort<br/> 
     ```python
-    
+    arr = [65,-26,41,4,62,21,145,3,-21,12,18,54]  
+     n = len(arr)
+
+     # Traverse through all array elements
+     for i in range(n):
+          # Last i elements are already in place
+          for j in range(0, n-i-1):
+               # traverse the array from 0 to n-i-1
+               # If the element found is greater than the next element
+               if arr[j] > arr[j+1] :
+                    arr[j], arr[j+1] = arr[j+1], arr[j]   # Swap
+
+     print ("Sorted array is: ", arr)
     ```
+    illustration: <br>
+    ![bubble](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/02/bubble-sort1.png)
+    <br> source: https://www.geeksforgeeks.org/bubble-sort/
+    
   * binary search<br/> 
     ```python
-    
+    arr = [-5, 2, 6, 8, 10, 11, 16, 17, 100] # array MUST be already sorted to begin binary search
+     x = 9                                   # number to be searched for
+     lower_index = 0
+     higher_index = len(arr)
+     result = -1                              # if x is not found, result is -1
+     while lower_index <= higher_index:
+
+         mid = lower_index + (higher_index - lower_index) // 2; # middle of the list
+     
+        # Check if x is present at mid
+        if arr[mid] == x:
+            result = mid                # great we found it!
+            break                       # break the loop
+
+        # If x is greater, ignore left half
+        elif arr[mid] < x:
+            lower_index = mid + 1       # x is more than middle element of the list, so ignore other half
+
+        # If x is smaller, ignore right half
+        else:
+            higher_index = mid - 1      # x is less than middle element of the list, so ignore other half
+
+    if result != -1:
+        print ("Element is present at index {}".format( result))
+    else:
+        print ("Element is not present in array")
     ```
-  * find prime factor<br/> 
+  * find prime factors<br/> 
     ```python
- 
+    import math
+     
+    def primeFactors(number):
+        if number < 2:
+            print("number must be greater than 2.")
+            return ""
+        # First handle 2's.
+        while number % 2 == 0: # if number is even, print 2 and divide by two
+            print (2)
+            number = number // 2
+             
+        # since we got out of the loop above, we are pretty sure that number is now odd.
+        # let's iterate over odd numbers starting from 3 to sqrt(number).
+        for i in range(3,int(math.sqrt(number))+1,2):
+            print("xxx",i)
+            # if i divides n , print i and divide n
+            # actually this is the same as the first loop, just i instead of 2
+            while number % i== 0:
+                print (i)
+                number = number // i
+                 
+        # this is the last factor
+        if number > 1:
+            print (number)
+             
+
+    number = 1
+    primeFactors(number)
     ```
   
 </details>
