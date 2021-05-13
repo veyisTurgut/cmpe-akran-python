@@ -590,7 +590,7 @@
      print ("Sorted array is: ", arr)
     ```
     illustration: <br>
-    ![bubble](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/02/bubble-sort1.png)
+    ![image](https://user-images.githubusercontent.com/47869761/118177373-47774100-b43b-11eb-98a0-e4511bb4bd87.png)
     <br> source: https://www.geeksforgeeks.org/bubble-sort/
     
   * binary search<br/> 
@@ -672,9 +672,70 @@
     print(short)
     ```
   * youtube video downloader <br/> 
-    ` `
+    source: https://www.dynamiccoding.tech <br>
+    ```python
+    # necesary imports
+    from tkinter import *
+    import pathlib
+    from pytube import YouTube
+    # if you get error, type "pip install pytube" to cmd
+    from tkinter import messagebox, filedialog
+
+    def Browse():
+        download_directory = filedialog.askdirectory(initialdir=pathlib.Path.cwd())
+        download_path.set(download_directory)
+
+    def Download():
+        youtube_link = video_link.get()
+        download_folder = download_path.get()
+        getVideo = YouTube(youtube_link)
+        videoStream = getVideo.streams.first()
+        videoStream.download(download_folder)
+        messagebox.showinfo("SUCCESSFULLY", "DOWNLOADED AND SAVED IN\n" + download_folder)
+
+    def Widgets():
+        link_label = Label(root, text="Youtube link :", bg="#E8D579", width=20)
+        link_label.grid(row=1, column=0, pady=5, padx=5)
+
+        link_text = Entry(root, width=55, textvariable=video_link)
+        link_text.grid(row=1, column=1, pady=5, padx=5, columnspan=2)
+
+        destination_label = Label(root, text="Destination : ", bg="#E8D579", width=20)
+        destination_label.grid(row=2, column=0, pady=5, padx=5)
+
+        destination_text = Entry(root, width=40, textvariable=download_path)
+        destination_text.grid(row=2, column=1, pady=5, padx=5, columnspan=2)
+
+        browse_b = Button(root, text="Browse", command=Browse, width=10, bg="#05E8E0")
+        browse_b.grid(row=2, column=2, pady=1, padx=1)
+
+        download_b = Button(root, text="Download", command=Download, width=10, bg="#05E8E0")
+        download_b.grid(row=3, column=1, pady=3, padx=3)
+
+    # creating mainwindow
+    root = Tk()
+    root.geometry("500x110")
+    root.resizable(0,0)
+    root.title("Our Very Own Youtube Downloader")
+    # creating tkinter variables
+    video_link = StringVar()
+    download_path = StringVar()
+    Widgets()
+    root.mainloop()
+    ```
   * convert video to audio <br/> 
-    ` `
+    source: https://www.dynamiccoding.tech <br>
+    ```python
+    import moviepy.editor
+     # pip install moviepy
+
+     path = "C:/Users/Veyis/Desktop/"
+     video_name ="iddaacom  Aston Villa - Everton (0-0) - Maç Özeti - Premier League 202021.mp4" # path of the video
+     video = moviepy.editor.VideoFileClip(path+video_name)
+
+     audio_data = video.audio
+     audio_data.write_audiofile(path+"audio_name.mp3")
+     ```
   * fetch instagram profile details <br/> 
     ```python
     from instagramy import InstagramUser
@@ -693,16 +754,90 @@
     print(user.number_of_followers)
     print(user.profile_picture_url)
     ```
-  * number guessing <br/> 
-    ` `
+  * number guessing game<br/> 
+    ```python
+    import random
+    import math
+
+    x = random.randint(0, 100)  # a random number between 0 and 100
+    count = 0                   # the number of guesses.
+
+    while True:
+        count += 1
+        # taking guessing number as input
+        guess = int(input("Guess a number between 0 and 100:- "))
+     
+        if x == guess: # found it
+            print("Congratulations you did it in ",
+                  count, " try")
+            # Once guessed, loop will break
+            break
+        elif x > guess: # guess is smaller
+            print("You guessed too small!")
+        elif x < guess: # guess is higher
+            print("You Guessed too high!")
+
+    ```
   * rock paper scissors <br/>
-    ` `
+    ```python
+    import random
+
+    user_win = 0
+    computer_win = 0
+    while True:
+        user_action = input("Enter a choice: r, p, s for rock, paper, scissors respectively: ")
+        possible_actions = ["rock", "paper", "scissors"]
+        computer_action = random.choice(possible_actions)
+        print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+
+        if user_action == computer_action:
+            print(f"Both players selected {user_action}. It's a tie!")
+        elif user_action == "r":
+            if computer_action == "scissors":
+                print("Rock smashes scissors! You win!")
+                user_win += 1
+            else:
+                print("Paper covers rock! You lose.")
+                computer_win += 1
+        elif user_action == "p":
+            if computer_action == "rock":
+                print("Paper covers rock! You win!")
+                user_win += 1
+            else:
+                print("Scissors cuts paper! You lose.")
+                computer_win += 1
+        elif user_action == "s":
+            if computer_action == "paper":
+                print("Scissors cuts paper! You win!")
+                user_win += 1
+            else:
+                print("Rock smashes scissors! You lose.")
+                computer_win += 1
+
+        print(f"""You: {user_win}
+    Computer: {computer_win}""")
+        play_again = input("Play again? (y/n): ")
+        if play_again.lower() != "y":
+            break
+
+    print(f"""
+    FINAL SCORE
+    You: {user_win}
+    Computer: {computer_win}""")
+
+    ```
   * website blocker<br/> 
-    ` `
+    ```python
+    
+    ```
   * pdf merge <br/> 
-    ` `
+    ```python
+    
+    ```
   * random password generator <br/> 
-    ` `
+    ```python
+    
+    ```
 </details>
 <br>
 Derived from  https://docs.python.org/3/tutorial/ and  https://www.w3schools.com/python/
